@@ -1,0 +1,83 @@
+body{
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    background-image: url("./img/bgMain.jpg");
+    background-size: cover;
+}
+.mainDiv{
+    /* background-color: aqua; */
+    height: 1000px;
+    width: 1850px;
+    margin-top: 85px;
+    margin-left: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.patker{
+    height: 900px;
+    width: 910px;
+    background-color: rgb(184, 184, 255);
+    border-radius: 60px;
+}
+.inputsMain{
+    height: 1000px;
+    width: 910px;
+    /* background-color: cornflowerblue; */
+ 
+}
+.label{
+    font-size: 50px;
+    text-align: center;
+}
+.inputs{
+margin-left: 7%;
+}
+
+.input{
+    background-color: rgb(204, 149, 255);
+    height: 90px;
+    width: 650px;
+    border-radius: 30px;
+}
+.nkar{
+    height: 90%;
+    width: 90%;
+   border-radius: 50px;
+   display:block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10%;
+}
+.harcMain{
+    background-color: rgb(151, 243, 255);
+    border-radius: 50px;
+    height: 300px;
+    width: 650px;
+
+}
+.harc{
+    font-size: 50px;
+}
+.harcDiv{
+    margin-left: 20px;
+}
+.inform{
+    /* background-color: cyan; */
+    height: 150px;
+    width: 910px;
+    display: flex;
+    justify-content: space-between;
+}
+.score{
+    /* background-color: darkkhaki; */
+    height: 150px;
+    width: 200px;
+    font-size: 40px;
+    margin-left: 30px;
+}
+.time{
+    background-color: rgb(52, 182, 0);
+    height: 150px;
+    width: 300px;
+    font-size: 50px;
+}
