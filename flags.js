@@ -1,78 +1,142 @@
 const imgs = [
     {
         "nkar": "img/Argentina.png",
-        "name": "Արգենտինա"
+        "name": "Արգենտինա",
+        "tipe":1
     },
     {
         "nkar": "img/China.png",
-        "name": "Չինաստան"
+        "name": "Չինաստան",
+        "tipe":1
     },
     {
         "nkar": "img/Japan.png",
-        "name": "Ճապոնիա"
+        "name": "Ճապոնիա",
+        "tipe":1
     },
     {
         "nkar": "img/poland.png",
-        "name": "Լեհաստան"
+        "name": "Լեհաստան",
+        "tipe":1
     },
     {
         "nkar": "img/SK.png",
-        "name": "Հարավային Կորեա"
+        "name": "Հարավային Կորեա",
+        "tipe":1
     },
     {
         "nkar": "img/Syunik.png",
-        "name": "Սյունիք"
+        "name": "Սյունիք",
+        "tipe":2
     },
     {
         "nkar": "img/Ararat.png",
-        "name": "Արարատ"
+        "name": "Արարատ",
+        "tipe":2
     },
     {
         "nkar": "img/austria.png",
-        "name": "Ավստրիա"
+        "name": "Ավստրիա",
+        "tipe":1
     },
     {
         "nkar": "img/Everest.jpg",
-        "name": "Էվերեստ"
+        "name": "Էվերեստ",
+        "tipe":3
     },
     {
         "nkar": "img/Map.png",
-        "name": "Ռուսաստան"
+        "name": "Ռուսաստան",
+        "tipe":1
     },
     {
         "nkar": "img/morocco.jpg",
-        "name": "Մարոկկո"
+        "name": "Մարոկկո",
+        "tipe":1
     },
     {
         "nkar": "img/SA.png",
-        "name": "Հարավային Աֆրիկա"
+        "name": "Հարավային Աֆրիկա",
+        "tipe":1
     },
     {
         "nkar": "img/aracac.jpg",
-        "name": "Հարավային Աֆրիկա"
+        "name": "Արագած",
+        "tipe":3
     },
     {
         "nkar": "img/arcakh.jpg",
-        "name": "Հարավային Աֆրիկա"
-    },
-      {
-        "nkar": "img/arcax.png",
-        "name": "Հարավային Աֆրիկա"
+        "name": "Ստեփանակերտ",
+        "tipe":4
     },
     {
-        "nkar": "img/SA.png",
-        "name": "Հարավային Աֆրիկա"
+        "nkar": "img/arcaxflag.png",
+        "name": "Արցախի Հանրապետություն",
+        "tipe":1
     },
     {
-        "nkar": "img/austria.png",
-        "name": "Ավստրիա"
+        "nkar": "img/austraila.jpg",
+        "name": "Ավստրալիա",
+        "tipe":1
     },
     {
-        "nkar": "img/austria.png",
-        "name": "Ավստրիա"
+        "nkar": "img/ph.png",
+        "name": "ֆիլիպիններ",
+        "tipe":1
     },
     {
-        "nkar": "img/austria.png",
-        "name": "Ավստրիա"
+        "nkar": "img/Vanadzor.jpg",
+        "name": "Վանաձոր",
+        "tipe":5
+    },
+    {
+        "nkar": "img/images.jpg",
+        "name": "Խաղաղ օվկիանոս",
+        "tipe":6
+    },
+    {
+        "nkar": "img/venezuela.png",
+        "name": "Վենեսուելա",
+        "tipe":1
+    }, 
+    {
+        "nkar": "img/arabic.png",
+        "name": "Արաբական թերակզզի",
+        "tipe":7
+    },
+    {
+        "nkar": "img/balkan.png",
+        "name": "Բալկանյան թերակղզի",
+        "tipe":7
+    },
+    {
+        "nkar": "img/caspian.png",
+        "name": "Կասպից ծով",
+        "tipe":8
+    },
+    {
+        "nkar": "img/ganges.jpg",
+        "name": "Գանգես",
+        "tipe":9
+    },
+    {
+        "nkar": "img/greenland.png",
+        "name": "Գրենլանդիա",
+        "tipe":10
+    },
+    {
+        "nkar": "img/mississipi.jpg",
+        "name": "Միսիսիպի",
+        "tipe":9
+    },
+    {
+        "nkar": "img/netherlands.png",
+        "name": "Նիդերլանդներ",
+        "tipe":1
+    },
+    {
+        "nkar": "img/ob.jpg",
+        "name": "Օբ",
+        "tipe":9
     },
 ]

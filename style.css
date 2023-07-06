@@ -33,12 +33,12 @@ body{
 margin-left: 7%;
 }
 
-.input{
+/* .input{
     background-color: rgb(204, 149, 255);
     height: 90px;
     width: 650px;
     border-radius: 30px;
-}
+} */
 .nkar{
     height: 90%;
     width: 90%;
@@ -57,6 +57,7 @@ margin-left: 7%;
 }
 .harc{
     font-size: 50px;
+    font-family: 'Noto Sans Armenian', sans-serif;
 }
 .harcDiv{
     margin-left: 20px;
@@ -74,13 +75,83 @@ margin-left: 7%;
     width: 250px;
     font-size: 40px;
     margin-left: 30px;
+    font-family: 'Noto Sans Armenian', sans-serif;
 }
 .time{
     /* background-color: rgb(52, 182, 0); */
     height: 150px;
     width: 300px;
-    font-size: 60px;
+    font-size: 50px;
     text-align: right;
     margin-top: 40px;
     margin-right: 60px;
+    font-family: 'Noto Sans Armenian', sans-serif;
+}
+
+
+
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    height: 90px;
+    width: 650px;
+    font-size: 35px;
+    font-family: 'Noto Sans Armenian', sans-serif;
+
+}
+
+.button1 {
+    background-color: rgb(218, 179, 255); 
+    color: black; 
+    border: 2px solid #b65dff;
+    border-radius: 30px;
+  }
+  
+.button1:hover {
+    background-color: #b65dff;
+    color: white;
+}
+
+.button2 {
+    background-color: rgb(218, 179, 255); 
+    color: black; 
+    border: 2px solid #b65dff;
+    border-radius: 30px;
+  }
+  
+.button2:hover {
+    background-color: #b65dff;
+    color: white;
+}
+
+.button3 {
+    background-color: rgb(218, 179, 255); 
+    color: black; 
+    border: 2px solid #b65dff;
+    border-radius: 30px;
+  }
+  
+.button3:hover {
+    background-color: #b65dff;
+    color: white;
+}
+
+.button4 {
+    background-color: rgb(218, 179, 255); 
+    color: black; 
+    border: 2px solid #b65dff;
+    border-radius: 30px;
+  }
+  
+.button4:hover {
+    background-color: #b65dff;
+    color: white;
 }
