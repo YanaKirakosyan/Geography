@@ -47,4 +47,32 @@ const imgs = [
         "nkar": "img/SA.png",
         "name": "Հարավային Աֆրիկա"
     },
+    {
+        "nkar": "img/aracac.jpg",
+        "name": "Հարավային Աֆրիկա"
+    },
+    {
+        "nkar": "img/arcakh.jpg",
+        "name": "Հարավային Աֆրիկա"
+    },
+      {
+        "nkar": "img/arcax.png",
+        "name": "Հարավային Աֆրիկա"
+    },
+    {
+        "nkar": "img/SA.png",
+        "name": "Հարավային Աֆրիկա"
+    },
+    {
+        "nkar": "img/austria.png",
+        "name": "Ավստրիա"
+    },
+    {
+        "nkar": "img/austria.png",
+        "name": "Ավստրիա"
+    },
+    {
+        "nkar": "img/austria.png",
+        "name": "Ավստրիա"
+    },
 ]
