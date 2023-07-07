@@ -1,4 +1,4 @@
-let seconds = 10;
+let seconds = 90;
 let correct;
 let correctAnswer = 0;
 let incorrectAnswer = 0;
@@ -6,7 +6,7 @@ let incorrectAnswer = 0;
 
 function getElement(id) {
   return document.getElementById(id)
-  
+
 }
 
 
@@ -15,31 +15,32 @@ function getRandomImgs() {
   return imgs[randomItem];
 }
 
-function main(){
-  let options =[]
+function main() {
+  let options = []
   let tipe;
-  const maxOptions =4;
+  const maxOptions = 4;
 
-  while (options.length < maxOptions){
+  while (options.length < maxOptions) {
     let coun = getRandomImgs();
-    if(options.length  == 0){
-       tipe= coun.tipe
+    if (options.length == 0) {
+      tipe = coun.tipe
     }
-  
-    if (options.indexOf(coun) === -1 && tipe==coun.tipe ){
+
+    if (options.indexOf(coun) === -1 && tipe == coun.tipe) {
       options.push(coun);
     }
   }
 
-  for (let i=0; i< options.length; i++){
-    getElement(`option${i+1}input`).addEventListener('click',check);
+  for (let i = 0; i < options.length; i++) {
+    getElement(`option${i + 1}input`).addEventListener('click', check);
   }
-  for (let i=0; i< options.length; i++){
-    getElement(`option${i+1}input`).innerHTML = options[i].name;
-    getElement(`option${i+1}input`).value = options[i].name
+  for (let i = 0; i < options.length; i++) {
+    getElement(`option${i + 1}input`).innerHTML = options[i].name;
+    getElement(`option${i + 1}input`).value = options[i].name
   }
-  correct = options[Math.round(Math.random() * (options.length -1))]
-  getElement("nkar").src = correct.nkar
+  correct = options[Math.round(Math.random() * (options.length - 1))]
+  getElement("answer").innerHTML = correct.answer
+
 }
 
 
@@ -47,7 +48,6 @@ function main(){
 function timer() {
   getElement("time").innerHTML = seconds;
   let countdown = setInterval(function () {
-    flags()
     seconds--;
     getElement("time").textContent = seconds;
     if (seconds <= 0) clearInterval(countdown);
@@ -64,37 +64,42 @@ function check(event) {
   } catch {
     return;
   }
-  if ( input=== correct.name){
-     correctAnswer++;
-     getElement("score").innerHTML = correctAnswer;
+  if (input === correct.name) {
+    correctAnswer++;
+    getElement("score").innerHTML = correctAnswer;
   }
-  else{
+  else {
     incorrectAnswer++
   }
- 
- main()
+
+  main()
 }
-
-
-
 function finish() {
   clearInterval(checkInterval);
-  let percentage = 100;
-  getElement("alertaccuracy").innerHTML = `der ardyunqn e ${percentage}%`;
+  let percentage = Math.round(correctAnswer / (correctAnswer + incorrectAnswer) * 100);
+  if (isNaN(percentage)) {
+    getElement("alertaccuracy").innerHTML = `duq harci cheq patasxanel`;
+  }
+  else {
+    if (percentage >= 80) {
+      getElement("alertaccuracy").style.color = "#26ff00"
+    }
+    else if (percentage >= 60 && percentage < 80) {
+      getElement("alertaccuracy").style.color = "#c3ff00"
+    }
+    else if (percentage >= 40 && percentage < 60) {
+      getElement("alertaccuracy").style.color = "#fffb00"
+    }
+    else if (percentage >= 20 && percentage < 40) {
+      getElement("alertaccuracy").style.color = "#ffae00"
+    }
+    else if (percentage >= 0 && percentage < 20) {
+      getElement("alertaccuracy").style.color = "#ff5100"
+    }
+    getElement("alertaccuracy").innerHTML = `der ardyunqn e ${percentage}%`;
+  }
+
 }
 
-// let checkInterval = setInterval(check, 50);
 main();
 timer();
-
-
-
-
-
-function flags() {
-  coun = getRandomImgs();
-  if (coun == undefined) {
-    coun = getRandomImgs();
-  }
-  getElement("nkar").src = coun.nkar;
-}
