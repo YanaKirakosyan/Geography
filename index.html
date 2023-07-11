@@ -10,54 +10,66 @@
 </head>
 
 <body>
-    <div id="block_container" class="mainDiv" id="">
-        <div class="patker" id="patker">
+    <section class="card" id="card">
+        <div id="block_container" class="mainDiv" id="">
+            <div class="patker" id="patker">
                 <div class="inform">
                     <div class="score"><br>
-                        Միավոր: <span id="score">0</span></div>
-                    <div class="score">Ճշգրտություն: <span id="alertaccuracy"></span></div>
+                        Միավոր` <span id="score">0</span></div>
                     <div class="time" id="time"></div>
                 </div>
-            <hr>
-            <div class="nkarMain">
-                <img src="" alt="Flag" class="nkar" id="nkar">
+                <hr>
+                <div class="nkarMain box">
+                    <img src="" alt="Flag" class="nkar" id="nkar">
+                </div>
             </div>
-        </div>
-        <div class="inputsMain" id="inputs">
-            <div class="inputs">
-                <div class="harcMain">
+            <div class="inputsMain" id="inputs">
+                <div class="inputs">
+                    <div class="harcMain">
+                        <br>
+                        <div class="harcDiv">
+                            <p class="harc" id="answer"> </p>
+                        </div>
+                    </div>
+
+                    <br><br> <br><br><br><br><br>
+                    <div class="input">
+                        <button id="option1input" class="button button1"></button>
+                    </div>
                     <br>
-                    <div class="harcDiv">
-                        <p class="harc" id= "answer"> </p>
+                    <br>
+                    <div class="input">
+                        <button id="option2input" class="button button2"></button>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="input">
+                        <button id="option3input" class="button button3"></button>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="input">
+                        <button id="option4input" class="button button4"></button>
                     </div>
                 </div>
 
-                <br><br> <br><br><br><br><br>
-                <div class="input">
-                    <button id="option1input" class="button button1"></button>
-                </div>
-                <br>
-                <br>
-                <div class="input">
-                    <button id="option2input" class="button button2"></button>
-                </div>
-                <br>
-                <br>
-                <div class="input">
-                    <button id="option3input" class="button button3"></button>
-                </div>
-                <br>
-                <br>
-                <div class="input">
-                    <button id="option4input" class="button button4"></button>
-                </div>
             </div>
-
         </div>
-    </div> 
+    </section>
+
+    <section id="alert" class="card1">
+        <div style=" display: inline-block; margin-top: 10px;">
+            <div class="alerttext"> <b>
+                Միավոր` </b><span id="alertscore"></span></div>
+            <div class="alerttext"><b> Ճշգրտություն`</b><span id="alertaccuracy"></span></div>
+            <br>
+            <button onclick="refresh()" class="buttononclick">Վերսկսել</button>
+        </div>
+    </section>
+
     <script src="flags.js"></script>
     <script src="script.js"></script>
-   
+
 </body>
 
 </html>

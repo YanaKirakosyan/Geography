@@ -14,7 +14,7 @@ body{
     justify-content: space-between;
 }
 .patker{
-    height: 900px;
+    height: 950px;
     width: 910px;
     background-color: rgb(184, 184, 255);
     border-radius: 60px;
@@ -40,13 +40,13 @@ margin-left: 7%;
     border-radius: 30px;
 } */
 .nkar{
-    height: 90%;
-    width: 90%;
+    height: 80%;
+    width: 80%;
    border-radius: 50px;
    display:block;
    margin-left: auto;
    margin-right: auto;
-   margin-top: 8%;
+   margin-top: 2%;
 }
 .harcMain{
     background-color: rgb(151, 243, 255);
@@ -154,4 +154,56 @@ margin-left: 7%;
 .button4:hover {
     background-color: #b65dff;
     color: white;
+}
+
+img {
+    height: 100%;
+    width: 100%
+    }
+    
+    /* .box{
+        width: 70%;
+        margin-left: 111px;
+        margin-right: 154px;
+        margin-top: 70px;
+        height: 600px;
+    } */
+.card1{
+    background-color: rgb(184, 184, 255);
+    height: 300px;
+    width: 400px;
+    margin-top: 350px;
+    margin-left: 800px;
+    font-size: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 7px 11px 0px rgba(0, 0, 0, .3);
+}
+
+.buttononclick{
+    width: 300px;
+    height: 60px;
+    background: rgb(9, 108, 35);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #fff;
+    margin-left: 60px;
+    font-size: 30px;
+    font-family: 'Noto Sans Armenian', sans-serif;
+
+}
+.buttononclick:hover {
+    background-color: rgb(46, 150, 74);
+}
+.alerttext{
+    margin-left: 20px;
+    margin-top: 20px
+    
+
+}
+#alert {
+    display: none;
+    padding: 40px 40px 60px 40px;
+    width: 20vw;
+    font-size: 2rem;
+    font-family: 'Noto Sans Armenian', sans-serif;
 }

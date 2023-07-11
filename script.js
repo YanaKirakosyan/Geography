@@ -1,4 +1,5 @@
-let seconds = 90;
+let seconds = 40;
+var copedimages= []
 let correct;
 let correctAnswer = 0;
 let incorrectAnswer = 0;
@@ -12,7 +13,8 @@ function getElement(id) {
 
 function getRandomImgs() {
   var randomItem = Math.floor(Math.random(imgs.length - 1) * imgs.length)
-  return imgs[randomItem];
+  var image = imgs[randomItem]
+  return image;
 }
 
 function main() {
@@ -25,7 +27,7 @@ function main() {
     if (options.length == 0) {
       tipe = coun.tipe
     }
-
+    console.log(coun)
     if (options.indexOf(coun) === -1 && tipe == coun.tipe) {
       options.push(coun);
     }
@@ -39,13 +41,23 @@ function main() {
     getElement(`option${i + 1}input`).value = options[i].name
   }
   correct = options[Math.round(Math.random() * (options.length - 1))]
+  if(copedimages.indexOf(correct) ===1){
+    correct = options[Math.round(Math.random() * (options.length - 1))]
+  }else{
+    copedimages.push(correct)
+  }
+
+
   getElement("answer").innerHTML = correct.answer
+  getElement("nkar").src = correct.nkar
+
 
 }
 
 
 
 function timer() {
+  setTimeout(finish, seconds * 1000);
   getElement("time").innerHTML = seconds;
   let countdown = setInterval(function () {
     seconds--;
@@ -75,10 +87,12 @@ function check(event) {
   main()
 }
 function finish() {
-  clearInterval(checkInterval);
+  getElement("alert").style.display = "block"
+  getElement("card").style.display = "none"
+  getElement("alertscore").innerHTML = correctAnswer;
   let percentage = Math.round(correctAnswer / (correctAnswer + incorrectAnswer) * 100);
   if (isNaN(percentage)) {
-    getElement("alertaccuracy").innerHTML = `duq harci cheq patasxanel`;
+    getElement("alertaccuracy").innerHTML = ` դուք ոչ մի հարցի չեք պատասխանել`;
   }
   else {
     if (percentage >= 80) {
@@ -96,9 +110,12 @@ function finish() {
     else if (percentage >= 0 && percentage < 20) {
       getElement("alertaccuracy").style.color = "#ff5100"
     }
-    getElement("alertaccuracy").innerHTML = `der ardyunqn e ${percentage}%`;
+    getElement("alertaccuracy").innerHTML = ` ${percentage}%`;
   }
+}
 
+function refresh() {
+  location = location
 }
 
 main();
